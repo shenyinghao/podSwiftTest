@@ -31,7 +31,10 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ocAndSwift/Classes/**/*{.h,.m,.swift}'
-  
+
+  s.frameworks = "Foundation", "UIKit"
+
+  s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/CommonCrypto" }
   # s.resource_bundles = {
   #   'ocAndSwift' => ['ocAndSwift/Assets/*.png']
   # }
